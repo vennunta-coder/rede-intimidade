@@ -1,0 +1,40 @@
+:root {
+  --bg: #fdf6e3;
+  --text: #333;
+  --header: #e6ddc4;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1e1e1e;
+    --text: #f0f0f0;
+    --header: #333;
+  }
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header, footer {
+  background-color: var(--header);
+  padding: 2rem 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.icon img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 1rem;
+}
