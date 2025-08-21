@@ -1,24 +1,25 @@
-name: Deploy to GitHub Pages
 
-on:
-  push:
-    branches:
-      - main
+## 🚀 Deploy
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout código
-        uses: actions/checkout@v3
+Este projeto é publicado automaticamente com [GitHub Pages](https://pages.github.com) via GitHub Actions.
 
-      - name: Configurar GitHub Pages
-        uses: actions/configure-pages@v3
+🔗 Acede ao site: [https://teu-usuario.github.io/rede-intimidade](https://teu-usuario.github.io/rede-intimidade)
 
-      - name: Upload dos ficheiros
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: src/
+## 🛠️ Tecnologias
 
-      - name: Publicar no GitHub Pages
-        uses: actions/deploy-pages@v2
+- HTML5
+- CSS3
+- GitHub Actions
+
+## 📸 Imagens
+
+- `folha-verde.png`: representa natureza e frescura  
+- `vela-acesa.png`: simboliza presença e calor  
+- `circulo-simples.png`: evoca unidade e simplicidade
+
+---
+
+## 🧠 Autor
+
+Feito com carinho por **PEDRO**  
+📍 Lisboa, Portugal  
