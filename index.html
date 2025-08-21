@@ -37,6 +37,20 @@
   <footer>
     <p>Feito com ❤️ por PEDRO</p>
   </footer>
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade-in');
+      }
+    });
+  });
+
+  document.querySelectorAll('img').forEach(img => {
+    observer.observe(img);
+  });
+</script>
 </body>
 
 </html>
+
