@@ -1,13 +1,5 @@
-# 🌿 Rede de Intimidade
+# 🌿 rede-intimidade
 
-Este projeto apresenta três ícones minimalistas que representam camadas de intimidade:
+Este é um projeto visual e simbólico que representa elementos de intimidade e conexão através de imagens e design minimalista.
 
-- **Folha verde**: presença e crescimento  
-- **Vela acesa**: silêncio e cuidado  
-- **Círculo simples**: comunidade e completude
-
-## 🚀 Deploy
-
-Este site é publicado automaticamente via GitHub Pages usando GitHub Actions.
-
-Feito com ❤️ por PEDRO.
+## 📁 Estrutura
