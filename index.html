@@ -3,74 +3,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rede de Intimidade</title>
+  <title>Rede da Intimidade</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <body>
-  <section class="intro fade-in">
-    <h1>Bem-vindo à Rede da Intimidade</h1>
-    <p>Onde cada luz flutuante é um pensamento, cada sombra uma memória.</p>
-  </section>
-
   <header>
-    <h1>🌿 Rede de Intimidade</h1>
-    <p>Três símbolos, três camadas de conexão.</p>
+    <nav class="language-switch">
+      <button onclick="setLanguage('pt')">🇵🇹 PT</button>
+      <button onclick="setLanguage('en')">🇬🇧 EN</button>
+    </nav>
   </header>
 
   <main>
-    <!-- Seções dos ícones -->
+    <section class="hero fade-in">
+      <h1>
+        <span class="pt">Rede da Intimidade</span>
+        <span class="en">Intimacy Network</span>
+      </h1>
+      <p>
+        <span class="pt">Cada luz flutuante é um pensamento. Cada sombra, uma memória.</span>
+        <span class="en">Each floating light is a thought. Each shadow, a memory.</span>
+      </p>
+    </section>
+
+    <section class="icons fade-in">
+      <div class="icon">
+        <img src="icon1.svg" alt="Ícone 1" />
+        <p>
+          <span class="pt">Presença</span>
+          <span class="en">Presence</span>
+        </p>
+      </div>
+      <div class="icon">
+        <img src="icon2.svg" alt="Ícone 2" />
+        <p>
+          <span class="pt">Vulnerabilidade</span>
+          <span class="en">Vulnerability</span>
+        </p>
+      </div>
+      <div class="icon">
+        <img src="icon3.svg" alt="Ícone 3" />
+        <p>
+          <span class="pt">Conexão</span>
+          <span class="en">Connection</span>
+        </p>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>Feito com ❤️ por PEDRO</p>
+    <p>
+      <span class="pt">© 2025 por PEDRO. Todos os direitos reservados.</span>
+      <span class="en">© 2025 by PEDRO. All rights reserved.</span>
+    </p>
   </footer>
+
+  <script>
+    function setLanguage(lang) {
+      document.querySelectorAll('.pt').forEach(el => el.style.display = lang === 'pt' ? 'inline' : 'none');
+      document.querySelectorAll('.en').forEach(el => el.style.display = lang === 'en' ? 'inline' : 'none');
+      document.documentElement.lang = lang;
+    }
+    setLanguage('pt'); // idioma padrão
+  </script>
 </body>
-  <header>
-    <h1>🌿 Rede de Intimidade</h1>
-    <p>Três símbolos, três camadas de conexão.</p>
-  </header>
-
-  <main>
-    <section class="icon">
-      <img src="../public/folha-verde.png" alt="Folha Verde" />
-      <h2>Folha Verde</h2>
-      <p>Presença, crescimento e intimidade natural.</p>
-    </section>
-
-    <section class="icon">
-      <img src="../public/vela-acesa.png" alt="Vela Acesa" />
-      <h2>Vela Acesa</h2>
-      <p>Silêncio, cuidado e profundidade emocional.</p>
-    </section>
-
-    <section class="icon">
-      <img src="../public/circulo-simples.png" alt="Círculo Simples" />
-      <h2>Círculo Simples</h2>
-      <p>Comunidade, ciclos e completude.</p>
-    </section>
-  </main>
-<img src="../public/vela-acesa.png" alt="Vela acesa" class="fade-in vela">
-<img src="../public/folha-verde.png" alt="Folha verde" class="fade-in">
-<img src="../public/circulo-simples.png" alt="Círculo simples" class="fade-in">
-  <footer>
-    <p>Feito com ❤️ por PEDRO</p>
-  </footer>
-<script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('fade-in');
-      }
-    });
-  });
-
-  document.querySelectorAll('img').forEach(img => {
-    observer.observe(img);
-  });
-</script>
-</body>
-
 </html>
-
-
