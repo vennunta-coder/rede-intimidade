@@ -10,63 +10,32 @@
 </head>
 <body>
   <header>
-    <nav class="language-switch">
-      <button onclick="setLanguage('pt')">🇵🇹 PT</button>
-      <button onclick="setLanguage('en')">🇬🇧 EN</button>
-    </nav>
+    <h1 class="site-title">Rede da Intimidade</h1>
   </header>
 
   <main>
     <section class="hero fade-in">
-      <h1>
-        <span class="pt">Rede da Intimidade</span>
-        <span class="en">Intimacy Network</span>
-      </h1>
-      <p>
-        <span class="pt">Cada luz flutuante é um pensamento. Cada sombra, uma memória.</span>
-        <span class="en">Each floating light is a thought. Each shadow, a memory.</span>
-      </p>
+      <p class="intro-text">Cada luz flutuante é um pensamento. Cada sombra, uma memória.</p>
     </section>
 
     <section class="icons fade-in">
       <div class="icon">
-        <img src="icon1.svg" alt="Ícone 1" />
-        <p>
-          <span class="pt">Presença</span>
-          <span class="en">Presence</span>
-        </p>
+        <img src="icon1.svg" alt="Ícone de presença" loading="lazy" />
+        <p>Presença</p>
       </div>
       <div class="icon">
-        <img src="icon2.svg" alt="Ícone 2" />
-        <p>
-          <span class="pt">Vulnerabilidade</span>
-          <span class="en">Vulnerability</span>
-        </p>
+        <img src="icon2.svg" alt="Ícone de vulnerabilidade" loading="lazy" />
+        <p>Vulnerabilidade</p>
       </div>
       <div class="icon">
-        <img src="icon3.svg" alt="Ícone 3" />
-        <p>
-          <span class="pt">Conexão</span>
-          <span class="en">Connection</span>
-        </p>
+        <img src="icon3.svg" alt="Ícone de conexão" loading="lazy" />
+        <p>Conexão</p>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>
-      <span class="pt">© 2025 por PEDRO. Todos os direitos reservados.</span>
-      <span class="en">© 2025 by PEDRO. All rights reserved.</span>
-    </p>
+    <p>© 2025 por PEDRO. Todos os direitos reservados.</p>
   </footer>
-
-  <script>
-    function setLanguage(lang) {
-      document.querySelectorAll('.pt').forEach(el => el.style.display = lang === 'pt' ? 'inline' : 'none');
-      document.querySelectorAll('.en').forEach(el => el.style.display = lang === 'en' ? 'inline' : 'none');
-      document.documentElement.lang = lang;
-    }
-    setLanguage('pt'); // idioma padrão
-  </script>
 </body>
 </html>
