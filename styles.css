@@ -1,40 +1,33 @@
-:root {
-  --bg: #fdf6e3;
-  --text: #333;
-  --header: #e6ddc4;
+/* Efeito de fade-in para elementos */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #1e1e1e;
-    --text: #f0f0f0;
-    --header: #333;
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-body {
-  font-family: sans-serif;
-  background-color: var(--bg);
-  color: var(--text);
-  margin: 0;
-  padding: 0;
-  text-align: center;
+/* Hover suave nas imagens */
+img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
-header, footer {
-  background-color: var(--header);
-  padding: 2rem 1rem;
+/* Vela com brilho pulsante */
+.vela {
+  animation: pulse 2s infinite;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 2rem;
-}
-
-.icon img {
-  width: 120px;
-  height: auto;
-  margin-bottom: 1rem;
+@keyframes pulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 5px orange);
+  }
+  50% {
+    filter: drop-shadow(0 0 15px yellow);
+  }
 }
