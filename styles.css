@@ -47,3 +47,20 @@ img:hover {
     opacity: 1;
   }
 }
+.language-switch {
+  text-align: right;
+  padding: 1rem;
+}
+
+.language-switch button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #e6ddc4;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.language-switch button:hover {
+  background-color: #d4cbb2;
+}
